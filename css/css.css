@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微軟正黑體";
+  box-sizing: border-box;
+  transition: 0.5s;
+  cursor: url(../images/pen.png) 0 100,auto;
+}
+
+#css-zen-garden {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* position: relative; */
+  overflow-x: hidden;
+}
+
+#page-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+
+#page-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-image: url(https://file02.16sucai.com/d/file/2014/0830/64c7c33e2a5328ef4aa1eab6baffe8ff.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  box-shadow: -1px -1px 3px #fff,5px 5px 10px black;
+  border: 5px solid silver;
+}
+
+#zen-intro {
+  width: 50%;
+}
+
+#banner {
+  position: fixed;
+  top: 0%;
+  left: 5%;
+  height: 100%;
+  width: 50%;
+  display: block;
+  transform: rotate(-15deg);
+  background-image: url(../images/book.svg);
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: goldenrod;
+  z-index: -2;
+  padding: 5rem 9rem 0 0;
+  line-height: 6rem;
+  filter: drop-shadow(15px 5px 10px black);
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+  font-size: 3rem;
+}
+
+#banner h1 {
+  font-family: "Tangerine", cursive;
+}
+
+#banner h2 {
+  font-family: "Tangerine", cursive;
+}
+
+#banner h2 abbr {
+  font-family: "Tangerine", cursive;
+  text-decoration: none;
+}
+
+abbr::before {
+  content: "";
+  display: block;
+}
+
+#zen-summary {
+  padding: 2rem 2rem 0 2rem;
+}
+
+#zen-summary p {
+  margin: 1rem 0 0 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#zen-summary p a {
+  color: red;
+  text-decoration: underline dashed orange;
+  font-family: serif;
+}
+
+#zen-summary p:first-child {
+  font-family: "Rye", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#zen-summary p:first-child abbr {
+  font-family: "Rye", cursive;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#zen-preamble {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+#zen-preamble h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  white-space: nowrap;
+}
+
+#zen-preamble p {
+  text-align: justify;
+}
+
+#zen-preamble abbr {
+  display: inline-block;
+}
+
+#zen-preamble h3::before {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  content: "I .";
+  display: inline-block;
+}
+
+#zen-supporting {
+  padding: 0 2rem 2rem 2rem;
+  width: 40%;
+  text-align: center;
+}
+
+#zen-supporting h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+#zen-supporting p {
+  text-align: justify;
+}
+
+#zen-supporting a{
+  color: darkred;
+}
+
+#zen-supporting abbr {
+  display: inline-block;
+  color: darkblue
+}
+
+#zen-supporting #zen-explanation h3::before {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  content: "II .";
+  display: inline-block;
+}
+
+#zen-supporting #zen-participation h3::before {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  content: "III .";
+  display: inline-block;
+}
+
+#zen-supporting #zen-benefits h3::before {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  content: "IV .";
+  display: inline-block;
+}
+
+#zen-supporting #zen-requirements h3::before {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  content: "V .";
+  display: inline-block;
+}
+
+#footer {
+  position: fixed;
+  top: 20%;
+  right: 0%;
+  display: flex;
+  width: 250px;
+  padding-right: 1rem;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  border-top: 20px solid rgba(255, 187, 0);
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid rgba(255, 187, 0);
+  border-right: 280px solid rgba(255, 187, 0);
+  width: 0px;
+  height: 0px;
+  top: -10px;
+  right: 0;
+  z-index: 98;
+  filter: drop-shadow(0 0 5px black);
+}
+
+#footer a {
+  color: #000;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: none;
+  z-index: 999;
+}
+
+#sidebar {
+  background: url(../images/oldpaper.jpg) no-repeat center/cover,
+    url(../images/border.png) no-repeat center;
+  position: absolute;
+  top: -5%;
+  right: -50%;
+  border: 10px solid rgb(112, 95, 0);
+  padding: 1rem;
+  padding-bottom: 11rem;
+  box-shadow: 0px 0px 10px black;
+}
+
+#sidebar #wrapper {
+  background: url(../images/border.png) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 10rem;
+  align-items: center;
+}
+
+#design-selection {
+  margin-top: 3rem;
+  width: auto;
+}
+
+.select {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Rye", cursive;
+}
+
+#design-selection nav ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  list-style-type: lower-roman;
+  margin-left: -50px;
+}
+
+#design-selection nav ul li a {
+  text-decoration: none;
+}
+
+#design-selection nav ul li .design-name {
+  color: darkred;
+}
+
+#design-selection nav ul li .designer-name {
+  display: block;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem;
+  padding-left: 50px;
+  color: black;
+  font-weight: bolder;
+}
+
+#design-archives {
+  margin-bottom: 3rem;
+  width: auto;
+}
+
+.archives {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Rye", cursive;
+}
+
+#design-archives nav ul li {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#design-archives nav ul li a {
+  color: darkred;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#zen-resources {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.resources {
+  font-family: "Rye", cursive;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+#zen-resources ul li {
+  list-style-type: armenian;
+  margin-left: -50px;
+}
+
+#zen-resources ul li a {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  color: darkblue;
+  display: flex;
+  justify-content: flex-start;
+  font-style: italic;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+
+#zen-resources ul li a abbr {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+}
+
+#zen-resources ul li:first-child a abbr {
+  margin-left: 0.5rem;
+}
+
+.extra1 {
+  margin-left: 80vw;
+  margin-top: 80vh;
+  position: sticky;
+  top:50px;
+  width: 300px;
+  height: 300px;
+  background: url(../images/butterfly.png) no-repeat center/cover;
+  transform: rotate(-30deg);
+  filter: drop-shadow(-10px -10px 5px gray);
+  pointer-events: none;
+  animation: rotateani 20s linear infinite;
+  z-index: 49;
+}
+
+@keyframes rotateani{
+  from{
+    transform: rotate(-30deg);
+  }
+  50%{
+    transform: rotate(-15deg);
+  }
+  to{
+    transform: rotate(-30deg);
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #D3CBB8;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px chocolate;  */
+  /* background-color: red; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#D3CBB8,white,#6D6027); 
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
